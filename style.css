@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+body {
+  background-color: #373545;
+  text-align: center;
+  color: #a7a7c4;
+}
+
+.flowText {
+  margin: 80px auto;
+  color: #373545;
+  font-size: 100px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.flowText .character {
+  display: inline-block;
+  -webkit-animation: flow 5s ease-in-out infinite;
+          animation: flow 5s ease-in-out infinite;
+}
+
+.flowText .character:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.flowText .character:nth-child(3) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.flowText .character:nth-child(4) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.flowText .character:nth-child(5) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.flowText .character:nth-child(6) {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.flowText .character:nth-child(7) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.flowText .character:nth-child(8) {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+@-webkit-keyframes flow {
+  0% {
+    -webkit-transform: translate(-130px, 0);
+            transform: translate(-130px, 0);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(225, 225, 225, 0.5);
+  }
+  100% {
+    -webkit-transform: translate(130px, 0);
+            transform: translate(130px, 0);
+  }
+}
+
+@keyframes flow {
+  0% {
+    -webkit-transform: translate(-130px, 0);
+            transform: translate(-130px, 0);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(225, 225, 225, 0.5);
+  }
+  100% {
+    -webkit-transform: translate(130px, 0);
+            transform: translate(130px, 0);
+  }
+}
+
+.notes {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #a7a7c4;
+  padding: 20px;
+  line-height: 2;
+  -webkit-box-shadow: 8px 8px 0 4px #2d2d36;
+          box-shadow: 8px 8px 0 4px #2d2d36;
+}
+
+.notes p {
+  text-align: start;
+}
+
+.notes li {
+  text-align: start;
+}
+
+footer {
+  margin-top: 80px;
+  border-top: 1px solid #a7a7c4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer #git {
+  background-image: url(https://github.com/ericjen01/logo/blob/main/oie_1G91ERsAm5Yw.png?raw=true);
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  margin: 10px;
+}
+
+footer #codepen {
+  background-image: url(https://github.com/ericjen01/logo/blob/main/oie_tcIrpCxAsDlw.png?raw=true);
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  margin: 10px;
+}
+/*# sourceMappingURL=style.css.map */

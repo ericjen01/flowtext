@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="style.css" />
+
+<div class="flowText">
+  <span class="character">F</span>
+  <span class="character">L</span>
+  <span class="character">O</span>
+  <span class="character">W</span>
+  <span class="character">T</span>
+  <span class="character">E</span>
+  <span class="character">X</span>
+  <span class="character">T</span>
+</div>
+
+<section class="notes">
+  <h1>SCSS Exercise: "Flow Text" Notes</h1>
+  <p>
+    This animation is accomplished by creating a @keyframs rule that the string
+    value of selected element(s) (.character/span) gradually change from the
+    current style to the new style at defined steps and time frame. No
+    Javascript or Flash is used
+  </p>
+
+  <p>Animation properties used:</p>
+  <ul>
+    <li>animation name: "flow"</li>
+    <li>animation duration: 5 seconds</li>
+    <li>transition-timing-fucntion: ease-in-out</li>
+    <li>animation-iteration-count: infinite</li>
+    <li>animation-delay*</li>
+  </ul>
+  <p>
+    *Animation-delay is applied to each character (.character/span). Delay
+    propert is set to 0.5 seconds. nth-child() selecter is used to pick these
+    characters individually
+  </p>
+  <p>
+    *Note that the display value has to be "inline-block, where the top and
+    bottoms margins/paddings are respected. Inline-block does not add a
+    line-break after each element so each character get to be sitting next to
+    each other"
+  </p>
+</section>
+
+<footer>
+  <a id="git" href="https://github.com/ericjen01/flowtext"></a>
+  <a id="codepen" href="https://codepen.io/ericjen01/pen/ZErzZPm"></a>
+</footer>
